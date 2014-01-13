@@ -1,0 +1,8 @@
+- funktionale anforderungen = usecase ?
+- datenbank schon vorhanden?
+- benutzerausweise aktuell?
+- anwesenheitsinfo an wachdienst
+  - schnittstelle?
+- Abteilungsleiter vorschläge stornieren?
+- diagramm zum strukturieren der e/a-daten (Aufg. 3)
+//- Kontextdiagramm? (Aufg. 4)
