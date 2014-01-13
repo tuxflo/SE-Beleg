@@ -1,0 +1,34 @@
+Tabelle Mitarbeiter:
+
+Primärschlüssel: MitarbeiterID <- Jeder Mitarbeiter erhält eine eindeutige ID
+Name
+Vorname
+E-Mail
+
+Tabelle Ausweis:
+Framdschlüssel MitarbeiterID
+Status (gültig, ungültig)
+
+Tabelle Stunden:
+Fremdschlüssel: MitarbeiterID
+Ist Stunden
+Soll Stunden
+
+(Überstunden ergeben sich falls Ist > Soll)
+
+Tabelle Urlaub:
+Fremdschlüssel: MitarbeiterID
+Urlaubstage
+genutzte Urlaubstage
+
+Tabelle Urlaubsanträge:
+Fremdschlüssel MitarbeiterID
+Datum
+Status (offen, abgelehnt, storniert, genehmigt)
+
+ich würde Urlaubstage und verbleibende Urlaubstage separat speicher und dann die verbleibenden Urlaubtage berechnen,
+damit bei einer erhöhung der Urlaubstage nur an einer Stelle eine Änderung in der DB vorgenommen werden muss
+
+Fragen:
+
+wie genau sehen die Abteilungen aus/wo speichern wir den Abteilungsleiter
